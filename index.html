@@ -1,0 +1,24 @@
+<html>
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
+	<script src="jquery.gfaq.js"></script>
+</head>
+<body>
+
+<div id="faq">
+</div>
+
+<script type="text/javascript" >
+$(function(){
+
+$("#faq").faq({
+	csv : 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AlsQ1nfxAXPfdFIyYl9RRk5jMzVXdV9LY3BnVEdYZkE&output=csv',
+	hideOthers: 'true',
+	heading: 'h1'
+	});
+	
+});
+</script>
+
+</body>
+</html>

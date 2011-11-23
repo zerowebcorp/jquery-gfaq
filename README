@@ -1,0 +1,25 @@
+A simple FAQ Plugin which can fetch FAQs from a shared Google Docs
+Vivek
+vivekv@vivekv.com
+http://www.vivekv.com
+
+Usage
+Create a div with the id "faq" and add the below code into your webpage
+
+<script type="text/javascript" >
+$(function(){
+
+$("#faq").faq({
+	csv : 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AlsQ1nfxAXPfdFIyYl9RRk5jMzVXdV9LY3BnVEdYZkE&output=csv',
+	hideOthers: 'true',
+	heading: 'h1'
+	});
+	
+});
+</script>
+
+Options
+-------
+csv: This is the CSV file shared on Google Docs. You may also use a csv file from other location
+hideOthers: Set this to true if you want to show only the selected questions answer and hide all other answers. false by default
+heading: The heading type that you want to set for the Questions. Example, h1, h2, h3, h4 and h5. h3 is default
