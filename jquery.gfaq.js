@@ -40,6 +40,7 @@ heading: The heading type that you want to set for the Questions. Example, h1, h
 		return this.each(function(){
 
 			var obj = $(this);
+			obj.html('');
 
 			var yqlURL =	"http://query.yahooapis.com/v1/public/yql?q="+
 					"select%20*%20from%20csv%20where%20url%3D'"+encodeURIComponent(options.csv)+
